@@ -1,13 +1,20 @@
 # Limit Order Book
 
-##Design an implement a REST API in Java that provides the functionality of a Limit Order Book.
-##Use the existing Spring dependencies (like Web, JPA , Spring Boot) provided in the Maven pom.xml file included in the quickstart
-##The following are the REST endpoints (Choose more appropriate endpoints if needed):
+###Design an implement a REST API in Java that provides the functionality of a Limit Order Book.
+###Use the existing Spring dependencies (like Web, JPA , Spring Boot) provided in the Maven pom.xml file included in the quickstart
+###The following are the REST endpoints (Choose more appropriate endpoints if needed):
 
-###/getOrders    - lists all the orders that have not been executed yet.
-###/addOrder     - adds a new order to the Order Book 
-###/cancelOrder  - deletes the order from the Order Book.
-###/execute      - picks the top priority order from the order book and executes it 
+####/getOrders    - lists all the orders that have not been executed yet.
+####/addOrder     - adds a new order to the Order Book (Pass Stock and Prive info as URL params)
+####/cancelOrder  - deletes the order from the Order Book.
+####/execute      - picks the top priority order from the order book and executes it 
+
+To read more about Limit Order Books :
+        http://www.investopedia.com/terms/l/limitorderbook.asp
+        https://en.wikipedia.org/wiki/Central_limit_order_book
+
+
+
 
 Please use an in-memory RDBMS like H2 or HSQL .
 
